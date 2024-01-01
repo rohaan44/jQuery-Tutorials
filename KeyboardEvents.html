@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+<script>
+// Keyboard events in jQuery
+//****************** KEYPRESS **********************
+
+$(document).ready(function() {
+    $('body').keypress(function() {
+        $(this).css('background-color','green')
+        
+    })
+});
+
+// *******************KeyDown**********************
+
+$(document).ready(function() {
+    $('p').keyup(function() {
+        $('p').css('background-color','blue')
+        })
+});
+
+//********************** Context Menu or right click **************************
+$(document).ready(function() {
+    $('p').keydown(function() {
+        $('p').css('background-color','black')
+        })
+});
+
+</script>
+
+</body>
+</html>

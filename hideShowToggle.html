@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="box" style="border: 2px solid black;">
+<h1 style="text-align: center"> 
+    Hello Boi's
+</h1>
+<p style="text-align: center;">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque unde praesentium omnis. Magnam inventore nihil exercitationem aliquam impedit voluptatibus.
+</p>
+</div>
+<input type="button" value="Hide" id="hide">
+<input type="button" value="Show" id="show">
+
+    <script>
+$(document).ready(function() {
+    $('#hide').click(function() {
+        $('.box').hide()
+    })
+});
+
+
+$(document).ready(function() {
+    $('#show').click(function() {
+        $('.box').show()
+    })
+});
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<Div class="box" style="border: 2px solid black;">
+<h1>
+    Hello's
+</h1>
+<p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, commodi corporis? Odit delectus possimus minus, labore vero accusantium ut repellat sit dolorum quis, autem distinctio magnam eligendi molestiae dignissimos blanditiis.
+</p>
+</Div>
+<input type="button" value="Fade IN" id="fadeIN">
+<input type="button" value="Fade Out" id="fadeOut">
+<input type="button" value="Fade Toggle" id="fadeToggle">
+<input type="button" value="Fade To" id="fadeTo">
+
+<script>
+$(document).ready(function() {
+    $('#fadeIN').click(function(){
+$('.box').fadeIn('slow')
+    });
+});
+
+$(document).ready(function() {
+    $('#fadeOut').click(function(){
+$('.box').fadeOut('slow')
+    });
+});
+
+$(document).ready(function() {
+    $('#fadeToggle').click(function(){
+$('.box').fadeToggle('slow')
+    });
+});
+
+$(document).ready(function() {
+    $('#fadeTo').click(function(){
+$('.box').fadeTo(2000 , 0.25)
+    });
+});
+
+</script>
+</body>
+</html>

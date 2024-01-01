@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<style>
+    #scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+#scroll-top-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+</style>
+
+</head>
+<body style="height: 150vh;">
+    <div id="scroll-to-top">
+        <a href="#" id="scroll-top-button">Scroll to Top</a>
+    </div>
+    <!-- Your page content -->
+<script>
+
+
+$(document).ready(function() {
+    // Show the button when the user scrolls down 200 pixels
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('#scroll-to-top').fadeIn();
+        } else {
+            $('#scroll-to-top').fadeOut();
+        }
+    });
+
+    // Smooth scroll to the top when the button is clicked
+    $('#scroll-top-button').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+    });
+});
+
+</script>
+
+
+
+</body>
+</html>
